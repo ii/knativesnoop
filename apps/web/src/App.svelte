@@ -64,7 +64,7 @@
 </script>
 
 <svelte:head>
-	<title>IstioSnoop</title>
+	<title>KnativeSnoop</title>
 </svelte:head>
 <Nav {segment}/>
 <main>
