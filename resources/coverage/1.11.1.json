@@ -1,0 +1,2799 @@
+{
+    "spec": "incluster",
+    "tests": null,
+    "release": "1.11.1",
+    "sources": null,
+    "endpoints": [
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "createServingKnativeDevV1NamespacedConfiguration",
+            "conf_tested": false,
+            "description": "create a Configuration"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "createServingKnativeDevV1NamespacedRevision",
+            "conf_tested": false,
+            "description": "create a Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "createServingKnativeDevV1NamespacedRoute",
+            "conf_tested": false,
+            "description": "create a Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "createServingKnativeDevV1NamespacedService",
+            "conf_tested": false,
+            "description": "create a Service"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1CollectionNamespacedConfiguration",
+            "conf_tested": false,
+            "description": "delete collection of Configuration"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1CollectionNamespacedRevision",
+            "conf_tested": false,
+            "description": "delete collection of Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1CollectionNamespacedRoute",
+            "conf_tested": false,
+            "description": "delete collection of Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1CollectionNamespacedService",
+            "conf_tested": false,
+            "description": "delete collection of Service"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1NamespacedConfiguration",
+            "conf_tested": false,
+            "description": "delete a Configuration"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1NamespacedRevision",
+            "conf_tested": false,
+            "description": "delete a Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1NamespacedRoute",
+            "conf_tested": false,
+            "description": "delete a Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1NamespacedService",
+            "conf_tested": false,
+            "description": "delete a Service"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/configurations",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1ConfigurationForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Configuration"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1NamespacedConfiguration",
+            "conf_tested": false,
+            "description": "list objects of kind Configuration"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1NamespacedRevision",
+            "conf_tested": false,
+            "description": "list objects of kind Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1NamespacedRoute",
+            "conf_tested": false,
+            "description": "list objects of kind Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1NamespacedService",
+            "conf_tested": false,
+            "description": "list objects of kind Service"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/revisions",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1RevisionForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/routes",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1RouteForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/services",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1ServiceForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Service"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedConfiguration",
+            "conf_tested": false,
+            "description": "partially update the specified Configuration"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedConfigurationStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Configuration"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedRevision",
+            "conf_tested": false,
+            "description": "partially update the specified Revision"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedRevisionStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedRoute",
+            "conf_tested": false,
+            "description": "partially update the specified Route"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedRouteStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedService",
+            "conf_tested": false,
+            "description": "partially update the specified Service"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1NamespacedServiceStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Service"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedConfiguration",
+            "conf_tested": false,
+            "description": "read the specified Configuration"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedConfigurationStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Configuration"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedRevision",
+            "conf_tested": false,
+            "description": "read the specified Revision"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedRevisionStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedRoute",
+            "conf_tested": false,
+            "description": "read the specified Route"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedRouteStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedService",
+            "conf_tested": false,
+            "description": "read the specified Service"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1NamespacedServiceStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Service"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedConfiguration",
+            "conf_tested": false,
+            "description": "replace the specified Configuration"
+        },
+        {
+            "kind": "Configuration",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/configurations/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedConfigurationStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Configuration"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedRevision",
+            "conf_tested": false,
+            "description": "replace the specified Revision"
+        },
+        {
+            "kind": "Revision",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/revisions/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedRevisionStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Revision"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedRoute",
+            "conf_tested": false,
+            "description": "replace the specified Route"
+        },
+        {
+            "kind": "Route",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/routes/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedRouteStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Route"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services/{name}",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedService",
+            "conf_tested": false,
+            "description": "replace the specified Service"
+        },
+        {
+            "kind": "Service",
+            "path": "/apis/serving.knative.dev/v1/namespaces/{namespace}/services/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "stable",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1NamespacedServiceStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Service"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "createOperatorKnativeDevV1beta1NamespacedKnativeEventing",
+            "conf_tested": false,
+            "description": "create a KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "createOperatorKnativeDevV1beta1NamespacedKnativeServing",
+            "conf_tested": false,
+            "description": "create a KnativeServing"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "createServingKnativeDevV1beta1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "create a DomainMapping"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "deleteOperatorKnativeDevV1beta1CollectionNamespacedKnativeEventing",
+            "conf_tested": false,
+            "description": "delete collection of KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "deleteOperatorKnativeDevV1beta1CollectionNamespacedKnativeServing",
+            "conf_tested": false,
+            "description": "delete collection of KnativeServing"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "deleteOperatorKnativeDevV1beta1NamespacedKnativeEventing",
+            "conf_tested": false,
+            "description": "delete a KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "deleteOperatorKnativeDevV1beta1NamespacedKnativeServing",
+            "conf_tested": false,
+            "description": "delete a KnativeServing"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1beta1CollectionNamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "delete collection of DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1beta1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "delete a DomainMapping"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/knativeeventings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "listOperatorKnativeDevV1beta1KnativeEventingForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/knativeservings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "listOperatorKnativeDevV1beta1KnativeServingForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind KnativeServing"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "listOperatorKnativeDevV1beta1NamespacedKnativeEventing",
+            "conf_tested": false,
+            "description": "list objects of kind KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "listOperatorKnativeDevV1beta1NamespacedKnativeServing",
+            "conf_tested": false,
+            "description": "list objects of kind KnativeServing"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1beta1DomainMappingForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1beta1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "list objects of kind DomainMapping"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "patchOperatorKnativeDevV1beta1NamespacedKnativeEventing",
+            "conf_tested": false,
+            "description": "partially update the specified KnativeEventing"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings/{name}/status",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "patchOperatorKnativeDevV1beta1NamespacedKnativeEventingStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "patchOperatorKnativeDevV1beta1NamespacedKnativeServing",
+            "conf_tested": false,
+            "description": "partially update the specified KnativeServing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings/{name}/status",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "patchOperatorKnativeDevV1beta1NamespacedKnativeServingStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified KnativeServing"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1beta1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "partially update the specified DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1beta1NamespacedDomainMappingStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified DomainMapping"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "readOperatorKnativeDevV1beta1NamespacedKnativeEventing",
+            "conf_tested": false,
+            "description": "read the specified KnativeEventing"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings/{name}/status",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "readOperatorKnativeDevV1beta1NamespacedKnativeEventingStatus",
+            "conf_tested": false,
+            "description": "read status of the specified KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "readOperatorKnativeDevV1beta1NamespacedKnativeServing",
+            "conf_tested": false,
+            "description": "read the specified KnativeServing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings/{name}/status",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "readOperatorKnativeDevV1beta1NamespacedKnativeServingStatus",
+            "conf_tested": false,
+            "description": "read status of the specified KnativeServing"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1beta1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "read the specified DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1beta1NamespacedDomainMappingStatus",
+            "conf_tested": false,
+            "description": "read status of the specified DomainMapping"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "replaceOperatorKnativeDevV1beta1NamespacedKnativeEventing",
+            "conf_tested": false,
+            "description": "replace the specified KnativeEventing"
+        },
+        {
+            "kind": "KnativeEventing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeeventings/{name}/status",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "replaceOperatorKnativeDevV1beta1NamespacedKnativeEventingStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified KnativeEventing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings/{name}",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "replaceOperatorKnativeDevV1beta1NamespacedKnativeServing",
+            "conf_tested": false,
+            "description": "replace the specified KnativeServing"
+        },
+        {
+            "kind": "KnativeServing",
+            "path": "/apis/operator.knative.dev/v1beta1/namespaces/{namespace}/knativeservings/{name}/status",
+            "group": "operator.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "operatorKnativeDev",
+            "endpoint": "replaceOperatorKnativeDevV1beta1NamespacedKnativeServingStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified KnativeServing"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1beta1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "replace the specified DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1beta1/namespaces/{namespace}/domainmappings/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "beta",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1beta1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1beta1NamespacedDomainMappingStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified DomainMapping"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "createAutoscalingInternalKnativeDevV1alpha1NamespacedMetric",
+            "conf_tested": false,
+            "description": "create a Metric"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "createAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscaler",
+            "conf_tested": false,
+            "description": "create a PodAutoscaler"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "createCachingInternalKnativeDevV1alpha1NamespacedImage",
+            "conf_tested": false,
+            "description": "create an Image"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "createNetworkingInternalKnativeDevV1alpha1ClusterDomainClaim",
+            "conf_tested": false,
+            "description": "create a ClusterDomainClaim"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "createNetworkingInternalKnativeDevV1alpha1NamespacedCertificate",
+            "conf_tested": false,
+            "description": "create a Certificate"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "createNetworkingInternalKnativeDevV1alpha1NamespacedIngress",
+            "conf_tested": false,
+            "description": "create an Ingress"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "createNetworkingInternalKnativeDevV1alpha1NamespacedServerlessService",
+            "conf_tested": false,
+            "description": "create a ServerlessService"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "post",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "createServingKnativeDevV1alpha1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "create a DomainMapping"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "deleteAutoscalingInternalKnativeDevV1alpha1CollectionNamespacedMetric",
+            "conf_tested": false,
+            "description": "delete collection of Metric"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "deleteAutoscalingInternalKnativeDevV1alpha1CollectionNamespacedPodAutoscaler",
+            "conf_tested": false,
+            "description": "delete collection of PodAutoscaler"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "deleteAutoscalingInternalKnativeDevV1alpha1NamespacedMetric",
+            "conf_tested": false,
+            "description": "delete a Metric"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "deleteAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscaler",
+            "conf_tested": false,
+            "description": "delete a PodAutoscaler"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "deleteCachingInternalKnativeDevV1alpha1CollectionNamespacedImage",
+            "conf_tested": false,
+            "description": "delete collection of Image"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images/{name}",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "deleteCachingInternalKnativeDevV1alpha1NamespacedImage",
+            "conf_tested": false,
+            "description": "delete an Image"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1ClusterDomainClaim",
+            "conf_tested": false,
+            "description": "delete a ClusterDomainClaim"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1CollectionClusterDomainClaim",
+            "conf_tested": false,
+            "description": "delete collection of ClusterDomainClaim"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1CollectionNamespacedCertificate",
+            "conf_tested": false,
+            "description": "delete collection of Certificate"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1CollectionNamespacedIngress",
+            "conf_tested": false,
+            "description": "delete collection of Ingress"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1CollectionNamespacedServerlessService",
+            "conf_tested": false,
+            "description": "delete collection of ServerlessService"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1NamespacedCertificate",
+            "conf_tested": false,
+            "description": "delete a Certificate"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1NamespacedIngress",
+            "conf_tested": false,
+            "description": "delete an Ingress"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "deleteNetworkingInternalKnativeDevV1alpha1NamespacedServerlessService",
+            "conf_tested": false,
+            "description": "delete a ServerlessService"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "deletecollection",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1alpha1CollectionNamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "delete collection of DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "delete",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "deleteServingKnativeDevV1alpha1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "delete a DomainMapping"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/metrics",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "listAutoscalingInternalKnativeDevV1alpha1MetricForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Metric"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "listAutoscalingInternalKnativeDevV1alpha1NamespacedMetric",
+            "conf_tested": false,
+            "description": "list objects of kind Metric"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "listAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscaler",
+            "conf_tested": false,
+            "description": "list objects of kind PodAutoscaler"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/podautoscalers",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "listAutoscalingInternalKnativeDevV1alpha1PodAutoscalerForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind PodAutoscaler"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/images",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "listCachingInternalKnativeDevV1alpha1ImageForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Image"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "listCachingInternalKnativeDevV1alpha1NamespacedImage",
+            "conf_tested": false,
+            "description": "list objects of kind Image"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/certificates",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "listNetworkingInternalKnativeDevV1alpha1CertificateForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Certificate"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "listNetworkingInternalKnativeDevV1alpha1ClusterDomainClaim",
+            "conf_tested": false,
+            "description": "list objects of kind ClusterDomainClaim"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/ingresses",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "listNetworkingInternalKnativeDevV1alpha1IngressForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind Ingress"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "listNetworkingInternalKnativeDevV1alpha1NamespacedCertificate",
+            "conf_tested": false,
+            "description": "list objects of kind Certificate"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "listNetworkingInternalKnativeDevV1alpha1NamespacedIngress",
+            "conf_tested": false,
+            "description": "list objects of kind Ingress"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "listNetworkingInternalKnativeDevV1alpha1NamespacedServerlessService",
+            "conf_tested": false,
+            "description": "list objects of kind ServerlessService"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/serverlessservices",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "listNetworkingInternalKnativeDevV1alpha1ServerlessServiceForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind ServerlessService"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1alpha1DomainMappingForAllNamespaces",
+            "conf_tested": false,
+            "description": "list objects of kind DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "list",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "listServingKnativeDevV1alpha1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "list objects of kind DomainMapping"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "patchAutoscalingInternalKnativeDevV1alpha1NamespacedMetric",
+            "conf_tested": false,
+            "description": "partially update the specified Metric"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics/{name}/status",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "patchAutoscalingInternalKnativeDevV1alpha1NamespacedMetricStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Metric"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "patchAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscaler",
+            "conf_tested": false,
+            "description": "partially update the specified PodAutoscaler"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers/{name}/status",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "patchAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscalerStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified PodAutoscaler"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images/{name}",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "patchCachingInternalKnativeDevV1alpha1NamespacedImage",
+            "conf_tested": false,
+            "description": "partially update the specified Image"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images/{name}/status",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "patchCachingInternalKnativeDevV1alpha1NamespacedImageStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Image"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1ClusterDomainClaim",
+            "conf_tested": false,
+            "description": "partially update the specified ClusterDomainClaim"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1ClusterDomainClaimStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified ClusterDomainClaim"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1NamespacedCertificate",
+            "conf_tested": false,
+            "description": "partially update the specified Certificate"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1NamespacedCertificateStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Certificate"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1NamespacedIngress",
+            "conf_tested": false,
+            "description": "partially update the specified Ingress"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1NamespacedIngressStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified Ingress"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1NamespacedServerlessService",
+            "conf_tested": false,
+            "description": "partially update the specified ServerlessService"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "patchNetworkingInternalKnativeDevV1alpha1NamespacedServerlessServiceStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified ServerlessService"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1alpha1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "partially update the specified DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "patch",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "patchServingKnativeDevV1alpha1NamespacedDomainMappingStatus",
+            "conf_tested": false,
+            "description": "partially update status of the specified DomainMapping"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "readAutoscalingInternalKnativeDevV1alpha1NamespacedMetric",
+            "conf_tested": false,
+            "description": "read the specified Metric"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics/{name}/status",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "readAutoscalingInternalKnativeDevV1alpha1NamespacedMetricStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Metric"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "readAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscaler",
+            "conf_tested": false,
+            "description": "read the specified PodAutoscaler"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers/{name}/status",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "readAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscalerStatus",
+            "conf_tested": false,
+            "description": "read status of the specified PodAutoscaler"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images/{name}",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "readCachingInternalKnativeDevV1alpha1NamespacedImage",
+            "conf_tested": false,
+            "description": "read the specified Image"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images/{name}/status",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "readCachingInternalKnativeDevV1alpha1NamespacedImageStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Image"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1ClusterDomainClaim",
+            "conf_tested": false,
+            "description": "read the specified ClusterDomainClaim"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1ClusterDomainClaimStatus",
+            "conf_tested": false,
+            "description": "read status of the specified ClusterDomainClaim"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1NamespacedCertificate",
+            "conf_tested": false,
+            "description": "read the specified Certificate"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1NamespacedCertificateStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Certificate"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1NamespacedIngress",
+            "conf_tested": false,
+            "description": "read the specified Ingress"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1NamespacedIngressStatus",
+            "conf_tested": false,
+            "description": "read status of the specified Ingress"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1NamespacedServerlessService",
+            "conf_tested": false,
+            "description": "read the specified ServerlessService"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "readNetworkingInternalKnativeDevV1alpha1NamespacedServerlessServiceStatus",
+            "conf_tested": false,
+            "description": "read status of the specified ServerlessService"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1alpha1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "read the specified DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "get",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "readServingKnativeDevV1alpha1NamespacedDomainMappingStatus",
+            "conf_tested": false,
+            "description": "read status of the specified DomainMapping"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "replaceAutoscalingInternalKnativeDevV1alpha1NamespacedMetric",
+            "conf_tested": false,
+            "description": "replace the specified Metric"
+        },
+        {
+            "kind": "Metric",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/metrics/{name}/status",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "replaceAutoscalingInternalKnativeDevV1alpha1NamespacedMetricStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Metric"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers/{name}",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "replaceAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscaler",
+            "conf_tested": false,
+            "description": "replace the specified PodAutoscaler"
+        },
+        {
+            "kind": "PodAutoscaler",
+            "path": "/apis/autoscaling.internal.knative.dev/v1alpha1/namespaces/{namespace}/podautoscalers/{name}/status",
+            "group": "autoscaling.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "autoscalingInternalKnativeDev",
+            "endpoint": "replaceAutoscalingInternalKnativeDevV1alpha1NamespacedPodAutoscalerStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified PodAutoscaler"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images/{name}",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "replaceCachingInternalKnativeDevV1alpha1NamespacedImage",
+            "conf_tested": false,
+            "description": "replace the specified Image"
+        },
+        {
+            "kind": "Image",
+            "path": "/apis/caching.internal.knative.dev/v1alpha1/namespaces/{namespace}/images/{name}/status",
+            "group": "caching.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "cachingInternalKnativeDev",
+            "endpoint": "replaceCachingInternalKnativeDevV1alpha1NamespacedImageStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Image"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1ClusterDomainClaim",
+            "conf_tested": false,
+            "description": "replace the specified ClusterDomainClaim"
+        },
+        {
+            "kind": "ClusterDomainClaim",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/clusterdomainclaims/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1ClusterDomainClaimStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified ClusterDomainClaim"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1NamespacedCertificate",
+            "conf_tested": false,
+            "description": "replace the specified Certificate"
+        },
+        {
+            "kind": "Certificate",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/certificates/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1NamespacedCertificateStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Certificate"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1NamespacedIngress",
+            "conf_tested": false,
+            "description": "replace the specified Ingress"
+        },
+        {
+            "kind": "Ingress",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/ingresses/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1NamespacedIngressStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified Ingress"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices/{name}",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1NamespacedServerlessService",
+            "conf_tested": false,
+            "description": "replace the specified ServerlessService"
+        },
+        {
+            "kind": "ServerlessService",
+            "path": "/apis/networking.internal.knative.dev/v1alpha1/namespaces/{namespace}/serverlessservices/{name}/status",
+            "group": "networking.internal.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "networkingInternalKnativeDev",
+            "endpoint": "replaceNetworkingInternalKnativeDevV1alpha1NamespacedServerlessServiceStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified ServerlessService"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings/{name}",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1alpha1NamespacedDomainMapping",
+            "conf_tested": false,
+            "description": "replace the specified DomainMapping"
+        },
+        {
+            "kind": "DomainMapping",
+            "path": "/apis/serving.knative.dev/v1alpha1/namespaces/{namespace}/domainmappings/{name}/status",
+            "group": "serving.knative.dev",
+            "level": "alpha",
+            "tests": [
+                null
+            ],
+            "action": "put",
+            "tested": false,
+            "release": "1.11.1",
+            "version": "v1alpha1",
+            "category": "servingKnativeDev",
+            "endpoint": "replaceServingKnativeDevV1alpha1NamespacedDomainMappingStatus",
+            "conf_tested": false,
+            "description": "replace status of the specified DomainMapping"
+        }
+    ],
+    "release_date": "2023-10-03T04:49:49",
+    "total endpoints": 164,
+    "tested endpoints": 0
+}
