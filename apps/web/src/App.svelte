@@ -14,7 +14,6 @@
 
  afterUpdate(()=> {
    segment = window.location.pathname.split('/')[1];
-   console.log({segment})
  });
 
  function queryObj (qs) {
@@ -43,7 +42,6 @@
 
  router('/:version?/:level?/:category?/:endpoint?', (ctx, next) => {
    params = ctx.params;
-   console.log({params})
    query = {...queryObj(ctx.querystring)};
    next()},  () => page = Home);
 
