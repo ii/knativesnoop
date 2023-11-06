@@ -3,10 +3,6 @@
  import router from "page";
  import Home from './pages/Home.svelte';
  import About from './pages/About.svelte';
- import ConformanceProgress from './pages/conformance-progress/Index.svelte';
- import ConformanceEndpoints from './pages/conformance-progress/Endpoints.svelte';
- import IneligibleEndpoints from './pages/conformance-progress/IneligibleEndpoints.svelte';
- import PendingEndpoints from './pages/conformance-progress/PendingEndpoints.svelte';
  import Nav from './components/Nav.svelte';
  import { flatten } from 'lodash-es';
  import {afterUpdate} from 'svelte';
@@ -18,6 +14,7 @@
 
  afterUpdate(()=> {
    segment = window.location.pathname.split('/')[1];
+   console.log({segment})
  });
 
  function queryObj (qs) {
@@ -44,19 +41,9 @@
    query = {...queryObj(ctx.querystring)};
    next()}, () => page = About);
 
- // router("/conformance-progress", (ctx, next) => {
- //   params = ctx.params;
- //   query = {...queryObj(ctx.querystring)};
- //   next()}, () => page = ConformanceProgress);
- // router("/conformance-progress/endpoints/:release?/:filter?", (ctx, next) => {
- //   params = ctx.params;
- //   query = {...queryObj(ctx.querystring)};
- //   next()}, () => page = ConformanceEndpoints);
- // router("/conformance-progress/ineligible-endpoints", () => page = IneligibleEndpoints);
- // router("/conformance-progress/pending-endpoints", () => page = PendingEndpoints);
-
  router('/:version?/:level?/:category?/:endpoint?', (ctx, next) => {
    params = ctx.params;
+   console.log({params})
    query = {...queryObj(ctx.querystring)};
    next()},  () => page = Home);
 
@@ -64,11 +51,11 @@
 </script>
 
 <svelte:head>
-	<title>KnativeSnoop</title>
+  <title>KnativeSnoop</title>
 </svelte:head>
 <Nav {segment}/>
 <main>
-    <svelte:component this={page} {params} {query}/>
+  <svelte:component this={page} {params} {query}/>
 </main>
 
 <style>
