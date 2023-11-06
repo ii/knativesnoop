@@ -23,21 +23,12 @@
    activeFilters,
    activeRelease,
    latestVersion,
-   newEndpoints,
-   olderNewEndpointsRaw,
-   previousVersion,
    releases
  } from '../store';
- import {
-   confEndpointsRaw,
-   ineligibleEndpoints,
-   pendingEndpoints
- } from '../store/conformance.js';
  import Sunburst from '../components/Sunburst/Wrapper.svelte'
- import NewEndpoints from '../components/new-endpoints.svelte';
 
- export let params;
  export let query;
+ export let params;
 
  $: ({
      version,
@@ -71,22 +62,14 @@
      }
      if (version === 'latest' || version == null) {
          version = $latestVersion;
+       console.log({version})
      };
      activeFilters.update(af => ({
          ...af,
          version,
          level: level || '',
          category: category || '',
-         endpoint: endpoint || '',
-         conformanceOnly: query["conformance-only"]
-                        ? query["conformance-only"].toLowerCase() === "true"
-                        : false,
-         excludeIneligible: query["exclude-ineligible"]
-                        ? query["exclude-ineligible"].toLowerCase() === "true"
-                        : false,
-         excludePending: query["exclude-pending"]
-                        ? query["exclude-pending"].toLowerCase() === "true"
-                        : false
+         endpoint: endpoint || ''
      }));
 
      if ($activeRelease !== 'older' && isEmpty($activeRelease.endpoints)) {
@@ -94,33 +77,6 @@
              .then(res => res.json());
          releases.update(rels => ({...rels, [$activeRelease.release]: rel}));
      }
-     // if ($confEndpointsRaw && isEmpty($confEndpointsRaw)) {
-     //     const conformanceEndpoints = await fetch(`${RELEASES_URL}/conformance-endpoints.json`)
-     //         .then(res => res.json());
-     //     confEndpointsRaw.set(conformanceEndpoints);
-     // }
-     // if ($ineligibleEndpoints && isEmpty($ineligibleEndpoints)) {
-     //   const ineligible= await fetch(INELIGIBLE_ENDPOINTS_URL)
-     //     .then(res => res.text())
-     //     .then(text=> yaml.load(text));
-     //     ineligibleEndpoints.set(ineligible);
-     // }
-     // if ($pendingEndpoints && isEmpty($pendingEndpoints)) {
-     //   const pending = await fetch(PENDING_ENDPOINTS_URL)
-     //     .then(res => res.text())
-     //     .then(text => yaml.load(text))
-     //     pendingEndpoints.set(pending);
-     // }
-     // if ($previousVersion !== 'older' && !isEmpty($releases[$previousVersion]) && isEmpty($releases[$previousVersion].endpoints)) {
-     //     let rel = await fetch(`${RELEASES_URL}/${$previousVersion}.json`)
-     //         .then(res => res.json());
-     //     releases.update(rels => ({...rels, [$previousVersion]: rel}));
-     // }
-     // if ($olderNewEndpointsRaw.length === 0) {
-     //     let older = await fetch(`${RELEASES_URL}/new-endpoints.json`)
-     //         .then(res=>res.json());
-     //     olderNewEndpointsRaw.set(older);
-     // }
  });
 </script>
 
@@ -129,7 +85,6 @@
 </svelte:head>
 {#if $activeRelease && $activeRelease.endpoints && $activeRelease.endpoints.length > 0}
     <Sunburst />
-    <!-- <NewEndpoints /> -->
 {:else}
     <em>loading data...</em>
 {/if}

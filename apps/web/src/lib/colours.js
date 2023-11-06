@@ -13,6 +13,14 @@ export const levelColours = {
   unused: 'rgba(244, 244, 244, 1)'
 };
 
+export const kindColours = {
+  'Configuration': 'rgba(27, 134, 232, 1)',
+  'DomainMapping': 'rgba(1, 87, 155, 1)',
+  'Revision': 'rgba(183, 28, 28, 1)',
+  'Route': 'rgba(209, 27, 146, 1)',
+  'Service': 'rgba(245, 127, 23, 1)'
+}
+
 
 export const categoryColours = {
   admissionregistration: 'rgba(183, 28, 28, 1)',
@@ -53,7 +61,7 @@ export const categoryColours = {
 };
 
 export function endpointColour (endpoint) {
-  let endpointColour = categoryColours[endpoint.category] || 'rgba(53,105,35,1)';
+  let endpointColour = kindColours[endpoint.kind] || 'rgba(53,105,35,1)';
   if (!endpoint.tested) {
     return GRAY;
   } else if (!endpoint.conf_tested) {
