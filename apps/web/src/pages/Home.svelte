@@ -1,4 +1,5 @@
 <script>
+
  import { onMount, afterUpdate } from 'svelte';
  import urlExist from 'url-exist';
  import yaml from 'js-yaml';
@@ -15,6 +16,7 @@
    INELIGIBLE_ENDPOINTS_URL,
    PENDING_ENDPOINTS_URL
  } from '../lib/constants.js';
+ import { features } from '../sampledata/features.js';
 
  import {
   releaseJsonExists
@@ -23,9 +25,11 @@
    activeFilters,
    activeRelease,
    latestVersion,
-   releases
+   releases,
+   behaviours
  } from '../store';
  import Sunburst from '../components/Sunburst/Wrapper.svelte'
+ import Behaviours from '../components/behaviours.svelte'
 
  export let query;
  export let params;
@@ -39,7 +43,10 @@
 
 
  afterUpdate(async() => {
-     if ($releases && isEmpty($releases)) {
+   if ($behaviours && isEmpty($behaviours)) {
+     behaviours.update(b => features);
+   }
+   if ($releases && isEmpty($releases)) {
        let releasesFromYaml = await fetch(`${RELEASES_URL}/releases.yaml?`)
          .then(res => res.blob())
          .then(blob => blob.text())
@@ -62,7 +69,6 @@
      }
      if (version === 'latest' || version == null) {
          version = $latestVersion;
-       console.log({version})
      };
      activeFilters.update(af => ({
          ...af,
@@ -85,6 +91,7 @@
 </svelte:head>
 {#if $activeRelease && $activeRelease.endpoints && $activeRelease.endpoints.length > 0}
     <Sunburst />
+    <Behaviours />
 {:else}
     <em>loading data...</em>
 {/if}

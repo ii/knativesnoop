@@ -28,6 +28,17 @@ import {
 import { EARLIEST_VERSION } from '../lib/constants.js';
 
 export const releases = writable([])
+export const behaviours = writable([])
+
+export const activeBehaviour = writable({});
+
+export const behaviourEndpoints = derived(activeBehaviour, ($ab, set) => {
+  if (!$ab.id) {
+    set([])
+  } else {
+    set($ab.endpoints)
+  }
+});
 
 export const versions = derived(releases, ($releases, set) => {
   // shorthand of the versions we have available, sorted by newest.
@@ -65,6 +76,7 @@ export const activeFilters = writable({
   level: '',
   category: '',
   endpoint: '',
+  kind: '',
   version: '',
 });
 
@@ -117,23 +129,26 @@ export const endpoints = derived(
         return !group.endsWith("operator.knative.dev") &&
           !group.endsWith("internal.knative.dev")
       });
-      console.log({endpoints});
       set(endpoints);
     }
   });
 
-export const groupedEndpoints = derived([activeRelease, endpoints], ([$ar, $eps], set) => {
+export const groupedEndpoints = derived([activeRelease, endpoints, activeBehaviour], ([$ar, $eps, $ab], set) => {
   if ($eps && $eps.length > 0) {
     const epsByLevel = groupBy($eps, 'level');
     set(mapValues(epsByLevel, epsInLevel => {
       const epsByKind = groupBy(epsInLevel, 'kind');
       return mapValues(epsByKind, epsInKind => {
         return epsInKind.map(ep => {
+          let ofActiveBehaviour = false;
+          if ($ab.endpoints && $ab.endpoints.length > 0 ) {
+            ofActiveBehaviour = $ab.endpoints.includes(ep.endpoint)
+          }
           return {
             ...ep,
             name: ep.endpoint,
             value: 1,
-            color: endpointColour(ep)
+            color: ofActiveBehaviour ? kindColours[ep.kind] : endpointColour(ep)
           };
         });
       });
