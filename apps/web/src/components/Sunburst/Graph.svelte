@@ -90,9 +90,10 @@
    } = $activeRelease;
    let {
      level,
-     category,
-     endpoint
+     endpoint,
+     kind
    } = node.data;
+   let category = kind;
    let { conformanceOnly } = $activeFilters;
    activeFilters.update(af=> ({...af, version, level, category, endpoint}));
    let newPath = "/" + compact([version,level,category,endpoint]).join('/');
